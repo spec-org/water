@@ -1,5 +1,7 @@
 Directory containing xyz structures optimized at the MP2/aug-cc-pVTZ level
 
+W1: Water monomer
+
 W2: Plain water dimer
 
 W3: up-up-down ring trimer
