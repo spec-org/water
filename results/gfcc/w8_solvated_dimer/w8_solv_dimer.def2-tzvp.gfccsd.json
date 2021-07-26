@@ -1,0 +1,121 @@
+{
+  "output": {
+    "SCF": {
+      "iter": {
+        "1": {
+          "data": {
+            "energy": -608.5204221606907,
+            "e_diff": 2.2737367544323206e-13,
+            "rmsd": 0.0
+          },
+          "profile": {
+            "total_time": 1.495154803
+          }
+        }
+      },
+      "final_energy": -608.5204221606907,
+      "n_iterations": 1
+    },
+    "CD": {
+      "n_cholesky_vectors": 2729
+    },
+    "CCSD": {
+      "n_iterations": 1,
+      "final_energy": {
+        "correlation": -2.2562423215556953,
+        "total": -610.7766644822464
+      }
+    },
+    "GFCCSD": {
+      "retarded_alpha": {
+        "level1": {
+          "omega_npts": 4,
+          "0": {
+            "omega": -19.5,
+            "A_a": 0.09560379080552607
+          },
+          "1": {
+            "omega": -19.49,
+            "A_a": 0.09868833904306075
+          },
+          "2": {
+            "omega": -19.48,
+            "A_a": 0.10194354088629014
+          },
+          "3": {
+            "omega": -19.47,
+            "A_a": 0.10538302265528642
+          }
+        },
+        "level2": {
+          "omega_npts": 4,
+          "0": {
+            "omega": -19.5,
+            "A_a": 0.0971332703908822
+          },
+          "1": {
+            "omega": -19.49,
+            "A_a": 0.10029865819682278
+          },
+          "2": {
+            "omega": -19.48,
+            "A_a": 0.10364098612739045
+          },
+          "3": {
+            "omega": -19.47,
+            "A_a": 0.10717452878939401
+          }
+        },
+        "nlevels": 2
+      }
+    }
+  },
+  "input": {
+    "molecule": {
+      "name": "w8_solv_dimer",
+      "basis": "def2-tzvp",
+      "basis_sphcart": "spherical",
+      "geometry_units": "angstrom"
+    },
+    "SCF": {
+      "tol_int": 1e-20,
+      "tol_lindep": 1e-05,
+      "conve": 1e-09,
+      "convd": 1e-07,
+      "diis_hist": 12,
+      "AO_tilesize": 30,
+      "force_tilesize": "false",
+      "scf_type": "rhf",
+      "multiplicity": 1
+    },
+    "CD": {
+      "diagtol": 1e-06,
+      "max_cvecs_factor": 12
+    },
+    "CCSD": {
+      "threshold": 1e-06,
+      "tilesize": 50,
+      "itilesize": 1000,
+      "ncuda": 0,
+      "ndiis": 5,
+      "readt": "false",
+      "writet": "true",
+      "ccsd_maxiter": 50,
+      "balance_tiles": "true"
+    },
+    "GFCCSD": {
+      "gf_ngmres": 50,
+      "gf_maxiter": 100,
+      "gf_threshold": 0.01,
+      "gf_nprocs_poi": 0,
+      "gf_damping_factor": 1.0,
+      "gf_omega_min_ip": -19.5,
+      "gf_omega_max_ip": -19.46,
+      "gf_omega_min_ip_e": -20.0,
+      "gf_omega_max_ip_e": -19.5,
+      "gf_omega_delta": 0.01,
+      "gf_omega_delta_e": 0.001,
+      "gf_extrapolate_level": 0
+    }
+  }
+}

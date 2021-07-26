@@ -1,0 +1,566 @@
+GA_NUM_PROGRESS_RANKS_PER_NODE=1
+{
+  "geometry": {
+    "coordinates": [
+      "O   0.02277885  -0.00642763  -1.36056841",
+      "H  -0.35350277   0.81470964  -1.71809042",
+      "H   0.94041503  -0.02947048  -1.68218566",
+      "O   0.03595643   0.03255532   1.39201696",
+      "H   0.01870483   0.00391823   0.41419927",
+      "H  -0.43363577  -0.76623765   1.68057286",
+      "O   2.663003    -0.05776818  -2.30923264",
+      "H   3.35691317   0.59089219  -2.16129158",
+      "H   3.06006981  -0.74071521  -2.85701841",
+      "O  -1.36962325  -2.34584098  -2.28008022",
+      "H  -2.10685088  -2.02443086  -2.80480773",
+      "H  -0.92024782  -1.53860689  -1.9775137",
+      "O  -1.28291767   2.31025356  -2.33233582",
+      "H  -2.20040577   2.45386539  -2.08176456",
+      "H  -1.05242828   3.0590831   -2.88888718",
+      "O  -1.26123074   2.3769768    2.310626",
+      "H  -1.22530895   2.33442905   3.2692117",
+      "H  -0.81289113   1.56242053   2.01759024",
+      "O   2.71148056   0.00580992   2.32264346",
+      "H   2.79059137   0.81862817   2.82818407",
+      "H   1.79236635   0.0200714    1.99876032",
+      "O  -1.3313117   -2.24984041   2.37512133",
+      "H  -0.95436794  -2.93229834   2.93740311",
+      "H  -2.24454279  -2.51205777   2.22985758"
+    ],
+    "units": "angstrom"
+  },
+  "basis": {
+    "basisset": "def2-tzvp",
+    "sphcart": "spherical"
+  },
+  "common": {
+    "maxiter": 50
+  },
+  "SCF": {
+    "tol_int": 1e-20,
+    "tol_lindep": 1e-05,
+    "conve": 1e-09,
+    "convd": 1e-07,
+    "diis_hist": 12,
+    "writem": 50,
+    "tilesize": 30,
+    "restart": true,
+    "noscf": true
+  },
+  "CD": {
+    "diagtol": 1e-06,
+    "max_cvecs": 12
+  },
+  "CC": {
+    "threshold": 1e-06,
+    "writet": true,
+    "readt": false,
+    "debug": false,
+    "GFCCSD": {
+      "gf_ip": true,
+      "gf_ea": false,
+      "gf_os": false,
+      "gf_cs": true,
+      "gf_ngmres": 50,
+      "gf_maxiter": 100,
+      "gf_itriples": false,
+      "gf_p_oi_range": 1,
+      "gf_eta": 0.01,
+      "gf_threshold": 0.01,
+      "gf_omega_min_ip": -19.5,
+      "gf_omega_max_ip": -19.46,
+      "gf_omega_min_ip_e": -20.0,
+      "gf_omega_max_ip_e": -19.5,
+      "gf_omega_delta": 0.01,
+      "gf_omega_delta_e": 0.001,
+      "gf_omega_min_ea": 0.0,
+      "gf_omega_max_ea": 0.1,
+      "gf_omega_min_ea_e": 0.0,
+      "gf_omega_max_ea_e": 0.1
+    }
+  }
+}
+Geometry in bohr as follows:
+{
+  "geometry_bohr": [
+    "O     0.0430457848  -0.0121464595  -2.5711014842",
+    "H    -0.6680233717   1.5395779802  -3.2467201181",
+    "H     1.7771267226  -0.0556911320  -3.1788699600",
+    "O     0.0679478002   0.0615206343   2.6305306264",
+    "H     0.0353470034   0.0074043811   0.7827231251",
+    "H    -0.8194527843  -1.4479792010   3.1758222100",
+    "O     5.0323459779  -0.1091660311  -4.3638169345",
+    "H     6.3436460602   1.1166243281  -4.0842488685",
+    "H     5.7826934481  -1.3997487828  -5.3989819404",
+    "O    -2.5882126507  -4.4329966660  -4.3087268487",
+    "H    -3.9813708629  -3.8256196091  -5.3003180615",
+    "H    -1.7390162218  -2.9075454269  -3.7369590325",
+    "O    -2.4243628627   4.3657461935  -4.4074756141",
+    "H    -4.1581639699   4.6371332010  -3.9339645920",
+    "H    -1.9888010723   5.7808288366  -5.4592051833",
+    "O    -2.3833805075   4.4918348342   4.3664500031",
+    "H    -2.3154981674   4.4114312453   6.1779143130",
+    "H    -1.5361414946   2.9525466813   3.8126927117",
+    "O     5.1239552829   0.0109791568   4.3891597095",
+    "H     5.2734530366   1.5469829282   5.3444929388",
+    "H     3.3870812734   0.0379294462   3.7771093225",
+    "O    -2.5158143189  -4.2515818939   4.4883285043",
+    "H    -1.8034938993  -5.5412403806   5.5508869971",
+    "H    -4.2415708437  -4.7471008538   4.2138198207"
+  ]
+}
+
+Common Options
+{
+ maxiter    = 50
+ basis      = def2-tzvp spherical
+ geom_units = angstrom
+ debug      = false
+}
+
+Number of nodes, mpi ranks per node provided: 150, 6
+Number of nodes, mpi ranks per node used for SCF calculation: 18, 6
+
+SCF Options
+{
+ charge       = 0
+ multiplicity = 1
+ level shift  = 0
+ tol_int      = 1e-20
+ tol_lindep   = 1e-05
+ conve        = 1e-09
+ convd        = 1e-07
+ diis_hist    = 12
+ AO_tilesize  = 30
+ writem       = 50
+ restart      = true
+ debug        = false
+ noscf        = true
+ ediis        = false
+ ediis_off    = 1e-05
+ sad          = false
+}
+
+Number of basis functions = 344
+
+Total number of electrons = 80
+  # of alpha electrons    = 40
+  # of beta electons      = 40
+
+Nuclear repulsion energy  = 423.678257784388
+
+# of {all,non-negligible} shell-pairs = {11628,8928}
+Number of AO tiles = 152
+
+Time for initial setup: 0.366791817 secs
+
+Time for computing 1-e integrals T, V, S: 0.009595998 secs
+Time for computing orthogonalizer: 0.084214986 secs
+
+pre-compute data for Schwarz bounds
+Reading movecs and density files ... done
+Total Time to compute initial guess: 0.078870467 secs
+
+
+ SCF iterations
+-----------------------------------------------------------------
+ Iter     Energy            E-Diff        Time(s)
+-----------------------------------------------------------------
+Total HF energy after restart: -608.520422160690941382
+   1  -608.5204221607     2.27e-13        1.5 
+
+** Total SCF energy = -608.5204221606907
+
+Nuclear repulsion energy = 423.678257784388109
+#electrons        = 80.000000000000099
+1e energy kinetic = 607.9412920836152807
+1e energy N-e     = -2293.8068256157603173
+1e energy         = -1685.8655335321450366
+2e energy         = 653.6668535870666119
+
+Time taken for Hartree-Fock: 2.8981616419999998 secs
+
+CCSD Options
+{
+ ndiis                = 5
+ printtol             = 0.05
+ threshold            = 1e-06
+ tilesize             = 50
+ ccsd_maxiter         = 50
+ itilesize            = 1000
+ readt                = false
+ writet               = true
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ gf_p_oi_range        = 1
+ gf_ip                = true
+ gf_ea                = false
+ gf_os                = false
+ gf_cs                = true
+ gf_restart           = false
+ gf_itriples          = false
+ gf_ndiis             = 10
+ gf_ngmres            = 50
+ gf_maxiter           = 100
+ gf_eta               = 0.01
+ gf_damping_factor    = 1
+ gf_threshold         = 0.01
+ gf_omega_min_ip      = -19.5
+ gf_omega_max_ip      = -19.46
+ gf_omega_min_ip_e    = -20
+ gf_omega_max_ip_e    = -19.5
+ gf_omega_min_ea      = 0
+ gf_omega_max_ea      = 0.1
+ gf_omega_min_ea_e    = 0
+ gf_omega_max_ea_e    = 0.1
+ gf_omega_delta       = 0.01
+ gf_omega_delta_e     = 0.001
+ debug                = false
+}
+
+#occupied, #virtual = 80, 608
+
+CD Options
+{
+ diagtol          = 1e-06
+ max_cvecs_factor = 12
+ debug            = false
+}
+Number of cholesky vectors to be read = 2729
+
+Total Time taken for CD (+SVD): 0.040164436 secs
+
+----------------------------
+scf_type = rhf
+nbf = 344
+nbf_orig = 344
+n_lindep = 0
+focc = 2
+nmo = 688
+nocc = 80
+nvir = 608
+n_occ_alpha = 40
+n_vir_alpha = 304
+n_occ_beta = 40
+n_vir_beta = 304
+nelectrons = 80
+nelectrons_alpha = 40
+nelectrons_beta = 40
+n_frozen_core = 0
+n_frozen_virtual = 0
+----------------------------
+
+
+ CCSD iterations
+------------------------------------------------------------------
+ Iter          Residuum       Correlation     Cpu    Wall    V2*C2
+------------------------------------------------------------------
+Number of NVIDIA GPUs found per node: 6
+Executing with 132 ranks (22 nodes)
+Total CPU memory required for Closed Shell Cholesky CCSD calculation: 17.125 GiB
+
+------------------------------------------------------------------
+ Iterations converged
+ CCSD correlation energy / hartree =          -2.2562423215557
+ CCSD total energy / hartree       =         -610.776664482246
+
+Time taken for Closed Shell Cholesky CCSD: 4.233115114 secs
+
+CCSD Options
+{
+ ndiis                = 5
+ printtol             = 0.05
+ threshold            = 1e-06
+ tilesize             = 50
+ ccsd_maxiter         = 50
+ itilesize            = 1000
+ readt                = false
+ writet               = true
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ gf_p_oi_range        = 1
+ gf_ip                = true
+ gf_ea                = false
+ gf_os                = false
+ gf_cs                = true
+ gf_restart           = false
+ gf_itriples          = false
+ gf_ndiis             = 10
+ gf_ngmres            = 50
+ gf_maxiter           = 100
+ gf_eta               = 0.01
+ gf_damping_factor    = 1
+ gf_threshold         = 0.01
+ gf_omega_min_ip      = -19.5
+ gf_omega_max_ip      = -19.46
+ gf_omega_min_ip_e    = -20
+ gf_omega_max_ip_e    = -19.5
+ gf_omega_min_ea      = 0
+ gf_omega_max_ea      = 0.1
+ gf_omega_min_ea_e    = 0
+ gf_omega_max_ea_e    = 0.1
+ gf_omega_delta       = 0.01
+ gf_omega_delta_e     = 0.001
+ debug                = false
+}
+
+#occupied, #virtual = 80, 608
+Freq. space (before doing MOR): [-19.5,-19.49,-19.48,-19.47,]
+
+GFCC: Time taken pre-restart: 15.105549809 secs
+
+GFCC: Time taken for reading/writing intermediates: 36.539245915 secs
+
+_____retarded_GFCCSD_on_alpha_spin______
+
+-------------------------------------------------------
+GF-CCSD (w = -19.5) 
+
+-------------------------------------------------------
+GF-CCSD (w = -19.46) 
+
+Time to read in pre-computed Q1/Q2: 0.01254624 secs
+
+Time for orthogonalization: 0 secs
+
+Time for normalizing and copying back: 0 secs
+
+Total time for Gram-Schmidt: 0 secs
+
+Time to contract Q1/Q2: 1.098046155 secs
+
+Time to compute Cp: 1.953157952 secs
+
+spectral function (omega_npts_ip = 4):
+W = -19.5, omega_ip_A0 =  0.0956037908055
+W = -19.49, omega_ip_A0 =  0.0986883390431
+W = -19.48, omega_ip_A0 =  0.101943540886
+W = -19.47, omega_ip_A0 =  0.105383022655
+
+omegas processed in level 1 = [-19.5,-19.46,]
+Time to compute spectral function in level 1 (omega_npts_ip = 4): 0.296771426 secs
+
+-------------------------------------------------------
+GF-CCSD (w = -19.48) 
+Total number of process groups = 5
+Total, remaining orbitals, batch size = 40, 5, 5
+No of processes used to compute each orbital = 180
+R-GF-CCSD Time for w,oi (-19.48,8) = 45.304708 secs, #iter = 2, using PG 2
+Total orbitals executed by process group 2 = 1
+  --> Total R-GF-CCSD Time = 45.386700879 secs
+R-GF-CCSD Time for w,oi (-19.48,34) = 45.356046 secs, #iter = 2, using PG 4
+Total orbitals executed by process group 4 = 1
+  --> Total R-GF-CCSD Time = 45.4394696 secs
+R-GF-CCSD Time for w,oi (-19.48,26) = 45.558288 secs, #iter = 2, using PG 3
+Total orbitals executed by process group 3 = 1
+  --> Total R-GF-CCSD Time = 45.630733117 secs
+R-GF-CCSD Time for w,oi (-19.48,19) = 46.331845 secs, #iter = 2, using PG 1
+Total orbitals executed by process group 1 = 1
+  --> Total R-GF-CCSD Time = 46.420954621 secs
+R-GF-CCSD Time for w,oi (-19.48,5) = 88.260414 secs, #iter = 3, using PG 0
+Total orbitals executed by process group 0 = 1
+  --> Total R-GF-CCSD Time = 88.335306327 secs
+Total R-GF-CCSD Time (w = -19.48) = 88.340709682 secs
+-------------------------------------------------------
+
+Time to read in pre-computed Q1/Q2: 0.494894765 secs
+
+Time for orthogonalization: 0 secs
+
+Time for normalizing and copying back: 0 secs
+
+Total time for Gram-Schmidt: 0 secs
+
+Time to contract Q1/Q2: 1.305414739 secs
+
+Time to compute Cp: 4.185135825 secs
+
+spectral function (omega_npts_ip = 4):
+W = -19.5, omega_ip_A0 =  0.0971332703909
+W = -19.49, omega_ip_A0 =  0.100298658197
+W = -19.48, omega_ip_A0 =  0.103640986127
+W = -19.47, omega_ip_A0 =  0.107174528789
+
+omegas processed in level 2 = [-19.48,]
+Time to compute spectral function in level 2 (omega_npts_ip = 4): 0.082345168 secs
+
+--------------------extrapolate & converge-----------------------
+
+Time taken for extrapolation (lomega_npts_ip = 501): 0.688380835 secs
+
+Time taken for GF-CCSD: 197.835690361 secs
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@batch2>
+Subject: Job 1133998: <w8_sd> in cluster <summit> Done
+
+Job <w8_sd> was submitted from host <login3> by user <panyala> in cluster <summit> at Tue Jul  6 11:09:00 2021
+Job was executed on host(s) <1*batch2>, in queue <batch>, as user <panyala> in cluster <summit> at Tue Jul  6 22:42:42 2021
+                            <42*f29n05>
+                            <42*f29n06>
+                            <42*f29n07>
+                            <42*f29n08>
+                            <42*f29n09>
+                            <42*f29n10>
+                            <42*f29n11>
+                            <42*f29n12>
+                            <42*f29n13>
+                            <42*f29n14>
+                            <42*f29n15>
+                            <42*f29n16>
+                            <42*f29n17>
+                            <42*f29n18>
+                            <42*f30n01>
+                            <42*f30n02>
+                            <42*f30n03>
+                            <42*f30n04>
+                            <42*f30n05>
+                            <42*f30n06>
+                            <42*f30n07>
+                            <42*f30n08>
+                            <42*f30n09>
+                            <42*f30n10>
+                            <42*f30n11>
+                            <42*f30n12>
+                            <42*f30n13>
+                            <42*f30n14>
+                            <42*f30n15>
+                            <42*f30n16>
+                            <42*f30n17>
+                            <42*f30n18>
+                            <42*f31n01>
+                            <42*f31n02>
+                            <42*f31n03>
+                            <42*f31n04>
+                            <42*f31n05>
+                            <42*f31n06>
+                            <42*f31n07>
+                            <42*f31n08>
+                            <42*f31n09>
+                            <42*f31n10>
+                            <42*f31n11>
+                            <42*f31n12>
+                            <42*f31n13>
+                            <42*f31n14>
+                            <42*f31n15>
+                            <42*f31n16>
+                            <42*f31n17>
+                            <42*f31n18>
+                            <42*f32n01>
+                            <42*f32n02>
+                            <42*f32n03>
+                            <42*f32n04>
+                            <42*f32n05>
+                            <42*f32n06>
+                            <42*f32n07>
+                            <42*f32n08>
+                            <42*f32n09>
+                            <42*f32n10>
+                            <42*f32n11>
+                            <42*f32n12>
+                            <42*f32n13>
+                            <42*f32n14>
+                            <42*f32n15>
+                            <42*f32n16>
+                            <42*f32n17>
+                            <42*f32n18>
+                            <42*f33n01>
+                            <42*f33n02>
+                            <42*f33n03>
+                            <42*f33n04>
+                            <42*f33n05>
+                            <42*f33n06>
+                            <42*f33n07>
+                            <42*f33n08>
+                            <42*f33n09>
+                            <42*f33n10>
+                            <42*f33n11>
+                            <42*f33n12>
+                            <42*f33n13>
+                            <42*f33n14>
+                            <42*f33n15>
+                            <42*f33n16>
+                            <42*f33n17>
+                            <42*f33n18>
+                            <42*f34n01>
+                            <42*f34n02>
+                            <42*f34n03>
+                            <42*f34n04>
+                            <42*f34n05>
+                            <42*f34n06>
+                            <42*f34n07>
+                            <42*f34n08>
+                            <42*f34n09>
+                            <42*f34n10>
+                            <42*f34n11>
+                            <42*f34n12>
+                            <42*f34n13>
+                            <42*f34n14>
+                            <42*f34n15>
+                            <42*f34n16>
+                            <42*f34n17>
+                            <42*f34n18>
+                            <42*f35n01>
+                            <42*f35n02>
+                            <42*f35n03>
+                            <42*f35n04>
+                            <42*f35n05>
+                            <42*f35n06>
+                            <42*f35n07>
+                            <42*f35n08>
+                            <42*f35n09>
+                            <42*f35n10>
+                            <42*f35n11>
+                            <42*f35n12>
+                            <42*f35n13>
+                            <42*f35n14>
+                            <42*f35n15>
+                            <42*f35n16>
+                            <42*f35n17>
+                            <42*f35n18>
+                            <42*f36n01>
+                            <42*f36n02>
+                            <42*f36n03>
+                            <42*f36n04>
+                            <42*f36n05>
+                            <42*f36n06>
+                            <42*f36n07>
+                            <42*f36n08>
+                            <42*f36n09>
+                            <42*f36n10>
+                            <42*f36n11>
+                            <42*f36n12>
+                            <42*f36n13>
+                            <42*f36n14>
+                            <42*f36n15>
+                            <42*f36n16>
+                            <42*f36n17>
+                            <42*f36n18>
+                            <42*f37n01>
+                            <42*f37n02>
+                            <42*f37n04>
+                            <42*f37n06>
+                            <42*f37n07>
+                            <42*f37n08>
+                            <42*f37n09>
+                            <42*f37n10>
+                            <42*f37n11>
+                            <42*f37n12>
+</ccs/home/panyala> was used as the home directory.
+</ccs/home/panyala/jobscripts/incite> was used as the working directory.
+Started at Tue Jul  6 22:42:42 2021
+Terminated at Tue Jul  6 22:46:51 2021
+Results reported at Tue Jul  6 22:46:51 2021
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <w8_sd.err.1133998> for stderr output of this job.
+

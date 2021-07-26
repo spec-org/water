@@ -1,0 +1,438 @@
+GA_NUM_PROGRESS_RANKS_PER_NODE=1
+{
+  "geometry": {
+    "coordinates": [
+      "O     -0.06849174    -0.02143682    -0.00638088",
+      "H     -0.52608217     0.77020930    -0.32510728",
+      "H     -0.49768733    -0.85461657    -0.24985935",
+      "O     -0.08228775     0.04010825     2.78593789",
+      "H      0.84119378     0.05499565     3.07686630",
+      "H     -0.04943812     0.02248963     1.81831731",
+      "O      2.56869058    -0.00784720    -0.92622160",
+      "H      2.66518802     0.75980439    -1.50852598",
+      "H      1.65041768     0.01265619    -0.61957262",
+      "O     -1.38834476     2.26195126    -0.92570081",
+      "H     -1.69513465     2.17686263    -1.84020559",
+      "H     -0.76696479     3.00462158    -0.92831569",
+      "O     -1.27881133    -2.37728993    -0.89300643",
+      "H     -0.69573358    -2.91352255    -1.44992117",
+      "H     -2.03588051    -2.15048475    -1.45254621",
+      "O      2.54568416     0.09478621     3.73028749",
+      "H      3.20180089     0.08742357     3.01815285",
+      "H      2.83452606    -0.58499094     4.35650829",
+      "O     -1.35099575    -2.27684292     3.69320828",
+      "H     -0.78947422    -2.65973950     4.38296395",
+      "H     -0.89198000    -1.47646415     3.39930783",
+      "O     -1.52197638     2.28126514     3.62589903",
+      "H     -2.17420445     1.97672627     4.27361326",
+      "H     -1.03609950     1.48886644     3.35440857",
+      "O      2.95334539     2.17781009    -2.62208868",
+      "H      2.15504971     2.71502393    -2.73073670",
+      "H      3.28722785     2.02471807    -3.51805991",
+      "O      2.99951783    -2.37529320    -2.34418125",
+      "H      3.67510026    -2.19007349    -3.01273277",
+      "H      2.87186175    -1.54274144    -1.86643592",
+      "O      4.28522177     0.08601123     1.27508109",
+      "H      4.93238867    -0.62575737     1.16444844",
+      "H      3.70674743     0.03372335     0.50028271",
+      "O     -2.21780413     1.86133611    -3.56246529",
+      "H     -1.97329563     0.98948600    -3.90564466",
+      "H     -1.94402494     2.49413857    -4.24238081",
+      "O      0.41102596     4.39591813    -0.82837305",
+      "H      1.28236043     4.13859861    -0.49334765",
+      "H      0.16820716     5.19304126    -0.33510552",
+      "O     -3.55062683     2.78793689     0.76216695",
+      "H     -3.51024466     2.29029313     1.59186513",
+      "H     -2.75942691     2.53101206     0.26651444",
+      "O      0.52244595    -3.81381915    -2.47189156",
+      "H      1.38755191    -3.38437863    -2.54154522",
+      "H      0.27278366    -4.04347709    -3.37886735",
+      "O     -3.50831367    -1.67823367    -2.42325539",
+      "H     -3.65258683    -0.72153081    -2.46305495",
+      "H     -4.36937411    -2.06166677    -2.20137006",
+      "O     -2.10015135    -3.85468181     1.33044496",
+      "H     -2.09537223    -3.33720109     2.14890081",
+      "H     -1.80501439    -3.24659573     0.63704421"
+    ],
+    "units": "angstrom"
+  },
+  "basis": {
+    "basisset": "def2-tzvp",
+    "sphcart": "spherical"
+  },
+  "common": {
+    "maxiter": 50
+  },
+  "SCF": {
+    "tol_int": 1e-20,
+    "tol_lindep": 1e-05,
+    "conve": 1e-09,
+    "convd": 1e-07,
+    "diis_hist": 12,
+    "writem": 50,
+    "tilesize": 30,
+    "restart": true,
+    "noscf": true
+  },
+  "CD": {
+    "diagtol": 1e-06,
+    "max_cvecs": 12
+  },
+  "CC": {
+    "threshold": 1e-06,
+    "writet": true,
+    "readt": false,
+    "debug": false,
+    "GFCCSD": {
+      "gf_ip": true,
+      "gf_ea": false,
+      "gf_os": false,
+      "gf_cs": true,
+      "gf_ngmres": 50,
+      "gf_nprocs_poi": 150,
+      "gf_maxiter": 100,
+      "gf_itriples": false,
+      "gf_p_oi_range": 1,
+      "gf_eta": 0.01,
+      "gf_threshold": 0.01,
+      "gf_omega_min_ip": -19.5,
+      "gf_omega_max_ip": -19.46,
+      "gf_omega_min_ip_e": -20.0,
+      "gf_omega_max_ip_e": -19.5,
+      "gf_omega_delta": 0.01,
+      "gf_omega_delta_e": 0.001,
+      "gf_omega_min_ea": 0.0,
+      "gf_omega_max_ea": 0.1,
+      "gf_omega_min_ea_e": 0.0,
+      "gf_omega_max_ea_e": 0.1
+    }
+  }
+}
+Geometry in bohr as follows:
+{
+  "geometry_bohr": [
+    "O    -0.1294306211  -0.0405097159  -0.0120581148",
+    "H    -0.9941511490   1.4554845312  -0.6143636762",
+    "H    -0.9404926819  -1.6149911430  -0.4721657073",
+    "O    -0.1555012998   0.0757936024   5.2646592345",
+    "H     1.5896257479   0.1039267091   5.8144342118",
+    "H    -0.0934245002   0.0424992383   3.4361214770",
+    "O     4.8541213467  -0.0148290578  -1.7503050291",
+    "H     5.0364750670   1.4358221023  -2.8507007495",
+    "H     3.1188371826   0.0239167312  -1.1708224821",
+    "O    -2.6235911747   4.2744680819  -1.7493208787",
+    "H    -3.2033400030   4.1136738864  -3.4774843285",
+    "H    -1.4493532963   5.6779114868  -1.7542622854",
+    "O    -2.4166030053  -4.4924265641  -1.6875374591",
+    "H    -1.3147458275  -5.5057592823  -2.7399537170",
+    "H    -3.8472563102  -4.0638269210  -2.7449143233",
+    "O     4.8106455169   0.1791199644   7.0492212163",
+    "H     6.0505263534   0.1652065923   5.7034818794",
+    "H     5.3564775621  -1.1054725826   8.2326069369",
+    "O    -2.5530117798  -4.3026092388   6.9791516695",
+    "H    -1.4918899512  -5.0261788571   8.2826008852",
+    "H    -1.6855977877  -2.7901126761   6.4237603510",
+    "O    -2.8761183199   4.3109660229   6.8519556305",
+    "H    -4.1086506546   3.7354710056   8.0759580444",
+    "H    -1.9579441523   2.8135496058   6.3389130525",
+    "O     5.5810135380   4.1154643262  -4.9550291241",
+    "H     4.0724534446   5.1306512813  -5.1603441111",
+    "H     6.2119598999   3.8261623573  -6.6481692428",
+    "O     5.6682667978  -4.4886532915  -4.4298602311",
+    "H     6.9449324735  -4.1386387919  -5.6932394134",
+    "H     5.4270317858  -2.9153585935  -3.5270524648",
+    "O     8.0978949474   0.1625376567   2.4095538739",
+    "H     9.3208630575  -1.1825099649   2.2004884799",
+    "H     7.0047369531   0.0637278909   0.9453972389",
+    "O    -4.1910421030   3.5174152213  -6.7320832434",
+    "H    -3.7289880360   1.8698574100  -7.3805982178",
+    "H    -3.6736744524   4.7132384759  -8.0169372719",
+    "O     0.7767264388   8.3070807358  -1.5653980812",
+    "H     2.4233098318   7.8208173514  -0.9322918758",
+    "H     0.3178654418   9.8134250310  -0.6332576102",
+    "O    -6.7097117979   5.2684367967   1.4402866934",
+    "H    -6.6334005618   4.3280264502   3.0081889071",
+    "H    -5.2145607466   4.7829192683   0.5036392637",
+    "O     0.9872796896  -7.2070731651  -4.6711977229",
+    "H     2.6220929054  -6.3955482537  -4.8028240545",
+    "H     0.5154863717  -7.6410637429  -6.3851334447",
+    "O    -6.6297515198  -3.1714017818  -4.5792886885",
+    "H    -6.9023882597  -1.3634955235  -4.6544989514",
+    "H    -8.2569198113  -3.8959852759  -4.1599862138",
+    "O    -3.9687105869  -7.2842923957   2.5141764178",
+    "H    -3.9596793597  -6.3063956303   4.0608337084",
+    "H    -3.4109826033  -6.1351763268   1.2038389998"
+  ]
+}
+
+Common Options
+{
+ maxiter    = 50
+ basis      = def2-tzvp spherical
+ geom_units = angstrom
+ debug      = false
+}
+
+Number of nodes, mpi ranks per node provided: 150, 6
+Number of nodes, mpi ranks per node used for SCF calculation: 37, 6
+
+SCF Options
+{
+ charge       = 0
+ multiplicity = 1
+ level shift  = 0
+ tol_int      = 1e-20
+ tol_lindep   = 1e-05
+ conve        = 1e-09
+ convd        = 1e-07
+ diis_hist    = 12
+ AO_tilesize  = 30
+ writem       = 50
+ restart      = true
+ debug        = false
+ noscf        = true
+ ediis        = false
+ ediis_off    = 1e-05
+ sad          = false
+}
+
+Number of basis functions = 731
+
+Total number of electrons = 170
+  # of alpha electrons    = 85
+  # of beta electons      = 85
+
+Nuclear repulsion energy  = 1588.70979237848
+
+# of {all,non-negligible} shell-pairs = {52326,33167}
+***** Reset tilesize to nbf*5% = 37
+Number of AO tiles = 323
+
+Time for initial setup: 0.488496504 secs
+
+Time for computing 1-e integrals T, V, S: 0.049526516 secs
+Time for computing orthogonalizer: 0.476884659 secs
+
+pre-compute data for Schwarz bounds
+Reading movecs and density files ... done
+Total Time to compute initial guess: 0.128611832 secs
+
+
+ SCF iterations
+-----------------------------------------------------------------
+ Iter     Energy            E-Diff        Time(s)
+-----------------------------------------------------------------
+Total HF energy after restart: -1293.129981158179589329
+   1  -1293.1299811582     1.82e-12        2.5 
+
+** Total SCF energy = -1293.1299811581778
+
+Nuclear repulsion energy = 1588.709792378477005
+#electrons        = 170.000000000000227
+1e energy kinetic = 1291.8862601474861549
+1e energy N-e     = -6249.8808305535721956
+1e energy         = -4957.9945704060864955
+2e energy         = 2076.1547968694299016
+
+Time taken for Hartree-Fock: 6.7894929980000001 secs
+
+CCSD Options
+{
+ ndiis                = 5
+ printtol             = 0.05
+ threshold            = 1e-06
+ tilesize             = 50
+ ccsd_maxiter         = 50
+ itilesize            = 1000
+ gf_nprocs_poi        = 150
+ readt                = false
+ writet               = true
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ gf_p_oi_range        = 1
+ gf_ip                = true
+ gf_ea                = false
+ gf_os                = false
+ gf_cs                = true
+ gf_restart           = false
+ gf_itriples          = false
+ gf_ndiis             = 10
+ gf_ngmres            = 50
+ gf_maxiter           = 100
+ gf_eta               = 0.01
+ gf_damping_factor    = 1
+ gf_threshold         = 0.01
+ gf_omega_min_ip      = -19.5
+ gf_omega_max_ip      = -19.46
+ gf_omega_min_ip_e    = -20
+ gf_omega_max_ip_e    = -19.5
+ gf_omega_min_ea      = 0
+ gf_omega_max_ea      = 0.1
+ gf_omega_min_ea_e    = 0
+ gf_omega_max_ea_e    = 0.1
+ gf_omega_delta       = 0.01
+ gf_omega_delta_e     = 0.001
+ debug                = false
+}
+
+#occupied, #virtual = 170, 1292
+
+Resetting CCSD tilesize to: 73
+
+CD Options
+{
+ diagtol          = 1e-06
+ max_cvecs_factor = 12
+ debug            = false
+}
+Number of cholesky vectors to be read = 5854
+
+Total Time taken for CD (+SVD): 0.037745035 secs
+
+----------------------------
+scf_type = rhf
+nbf = 731
+nbf_orig = 731
+n_lindep = 0
+focc = 2
+nmo = 1462
+nocc = 170
+nvir = 1292
+n_occ_alpha = 85
+n_vir_alpha = 646
+n_occ_beta = 85
+n_vir_beta = 646
+nelectrons = 170
+nelectrons_alpha = 85
+nelectrons_beta = 85
+n_frozen_core = 0
+n_frozen_virtual = 0
+----------------------------
+
+
+ CCSD iterations
+------------------------------------------------------------------
+ Iter          Residuum       Correlation     Cpu    Wall    V2*C2
+------------------------------------------------------------------
+Number of NVIDIA GPUs found per node: 6
+Executing with 288 ranks (48 nodes)
+Total CPU memory required for Closed Shell Cholesky CCSD calculation: 248.41 GiB
+
+------------------------------------------------------------------
+ Iterations converged
+ CCSD correlation energy / hartree =         -4.80980585629297
+ CCSD total energy / hartree       =         -1297.93978701447
+
+Time taken for Closed Shell Cholesky CCSD: 6.727633634 secs
+
+CCSD Options
+{
+ ndiis                = 5
+ printtol             = 0.05
+ threshold            = 1e-06
+ tilesize             = 50
+ ccsd_maxiter         = 50
+ itilesize            = 1000
+ gf_nprocs_poi        = 150
+ readt                = false
+ writet               = true
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ gf_p_oi_range        = 1
+ gf_ip                = true
+ gf_ea                = false
+ gf_os                = false
+ gf_cs                = true
+ gf_restart           = false
+ gf_itriples          = false
+ gf_ndiis             = 10
+ gf_ngmres            = 50
+ gf_maxiter           = 100
+ gf_eta               = 0.01
+ gf_damping_factor    = 1
+ gf_threshold         = 0.01
+ gf_omega_min_ip      = -19.5
+ gf_omega_max_ip      = -19.46
+ gf_omega_min_ip_e    = -20
+ gf_omega_max_ip_e    = -19.5
+ gf_omega_min_ea      = 0
+ gf_omega_max_ea      = 0.1
+ gf_omega_min_ea_e    = 0
+ gf_omega_max_ea_e    = 0.1
+ gf_omega_delta       = 0.01
+ gf_omega_delta_e     = 0.001
+ debug                = false
+}
+
+#occupied, #virtual = 170, 1292
+Freq. space (before doing MOR): [-19.5,-19.49,-19.48,-19.47,]
+
+GFCC: Time taken pre-restart: 22.067939171 secs
+
+GFCC: Time taken for reading/writing intermediates: 184.0301179 secs
+
+_____retarded_GFCCSD_on_alpha_spin______
+
+-------------------------------------------------------
+GF-CCSD (w = -19.5) 
+
+-------------------------------------------------------
+GF-CCSD (w = -19.46) 
+
+Time to read in pre-computed Q1/Q2: 0.073800031 secs
+
+Time for orthogonalization: 0 secs
+
+Time for normalizing and copying back: 0 secs
+
+Total time for Gram-Schmidt: 0 secs
+
+Time to contract Q1/Q2: 19.910678496 secs
+
+Time to compute Cp: 52.541931855 secs
+
+spectral function (omega_npts_ip = 4):
+W = -19.5, omega_ip_A0 =  0.592023809424
+W = -19.49, omega_ip_A0 =  0.568911445182
+W = -19.48, omega_ip_A0 =  0.547140452499
+W = -19.47, omega_ip_A0 =  0.526608124389
+
+omegas processed in level 1 = [-19.5,-19.46,]
+Time to compute spectral function in level 1 (omega_npts_ip = 4): 0.194455666 secs
+
+-------------------------------------------------------
+GF-CCSD (w = -19.48) 
+
+Time to read in pre-computed Q1/Q2: 20.447481188 secs
+
+Time for orthogonalization: 0 secs
+
+Time for normalizing and copying back: 0 secs
+
+Total time for Gram-Schmidt: 0 secs
+
+Time to contract Q1/Q2: 41.942176279 secs
+
+Time to compute Cp: 99.040300197 secs
+
+spectral function (omega_npts_ip = 4):
+W = -19.5, omega_ip_A0 =  0.590254810052
+W = -19.49, omega_ip_A0 =  0.567246418291
+W = -19.48, omega_ip_A0 =  0.545571308409
+W = -19.47, omega_ip_A0 =  0.525127552716
+
+omegas processed in level 2 = [-19.48,]
+Time to compute spectral function in level 2 (omega_npts_ip = 4): 0.334356664 secs
+
+--------------------extrapolate & converge-----------------------
+
+Time taken for extrapolation (lomega_npts_ip = 501): 3.438529043 secs
+
+Time taken for GF-CCSD: 1311.075378839 secs
+
+------------------------------------------------------------
+

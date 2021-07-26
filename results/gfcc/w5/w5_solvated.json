@@ -1,0 +1,74 @@
+{
+    "geometry": {
+      "coordinates": [
+        "O  -0.00354472 -0.08149026  0.01491547",
+        "H  -0.39032271  0.74241384 -0.32014335",
+        "H   0.92751433 -0.05263168 -0.25792714",
+        "O  -0.08995661 -0.11714257  2.87959018",
+        "H  -0.07602037 -0.13535657  1.90811717",
+        "H  -0.42363594 -0.98426489  3.12351228",
+        "O   2.70157691 -0.05359097 -0.85190341",
+        "H   3.43241397  0.55483635 -0.71236704",
+        "H   3.05524812 -0.75650624 -1.40467879",
+        "O  -1.30672697 -2.41143972 -1.00824991",
+        "H  -2.03478178 -2.10209935 -1.55236159",
+        "H  -0.89189792 -1.59812893 -0.67322552",
+        "O  -1.33926007  2.26076533 -0.95303245",
+        "H  -2.26755199  2.39679908 -0.7418469",
+        "H  -1.08742531  3.02190474 -1.48316964"
+      ],
+      "units": "angstrom"
+    },
+    "basis": {
+      "basisset": "cc-pvdz",
+      "sphcart": "spherical"
+    },
+    "common": {
+      "maxiter": 50
+    },
+    "SCF": {
+      "tol_int": 1e-20,
+      "tol_lindep": 1e-05,
+      "conve": 1e-09,
+      "convd": 1e-07,
+      "diis_hist": 12,
+      "writem": 50,
+      "tilesize": 30,
+      "restart": false,
+      "noscf": false
+    },
+    "CD": {
+      "diagtol": 1e-06,
+      "max_cvecs": 12
+    },
+    "CC": {
+      "threshold": 1e-06,
+      "writet": true,
+      "readt": false,
+      "debug": true,
+      "GFCCSD": {
+        "gf_restart": true,
+        "gf_ip": true,
+        "gf_ea": false,
+        "gf_os": false,
+        "gf_cs": true,
+        "gf_ngmres": 50,
+        "gf_maxiter": 100,
+        "gf_itriples": false,
+        "gf_p_oi_range": 1,
+        "gf_eta": 0.01,
+        "gf_threshold": 0.01,
+        "gf_omega_min_ip": -19.50,
+        "gf_omega_max_ip": -19.46,
+        "gf_omega_min_ip_e": -20.00,
+        "gf_omega_max_ip_e": -19.50,
+        "gf_omega_delta": 0.01,
+        "gf_omega_delta_e": 0.001,
+        "gf_omega_min_ea": 0.0,
+        "gf_omega_max_ea": 0.1,
+        "gf_omega_min_ea_e": 0.0,
+        "gf_omega_max_ea_e": 0.1
+      }
+    }
+  }
+  
