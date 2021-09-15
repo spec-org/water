@@ -3,7 +3,7 @@ import sys
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
-au2ev = 27.2139
+au2ev = 27.21139
 
 tzvp = np.loadtxt('def2tzvp.dat')
 _xmin = -20.5*au2ev

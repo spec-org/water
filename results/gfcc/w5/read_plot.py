@@ -3,7 +3,7 @@ import sys
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
-au2ev = 27.2139
+au2ev = 27.21139
 
 dz = np.loadtxt('ccpvdz.dat')
 tz = np.loadtxt('ccpvtz.dat')
